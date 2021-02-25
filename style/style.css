@@ -229,3 +229,26 @@ table#t01 tr:nth-child(odd)
 {
     height: 2100px;
 }
+
+#scene
+{
+    height: 2710px;
+}
+
+#trailer
+{
+    padding-left: 20%;
+    font-size: 2em;
+}
+.video
+{
+   margin-left:5%;
+   width:90%;
+   border-radius:25px;
+}
+.video video
+{
+   width:100%; 
+   border-radius:10px;
+   opacity:500;
+}
