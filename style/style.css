@@ -188,3 +188,44 @@ table#t01 tr:nth-child(odd)
     text-align: center;
     background-color: #dfbf9f;
 }
+
+.subtitle
+{
+    padding-top: 5%;
+    padding-left: 40%;
+    font-family: 'Stencil';
+    font-size: 1.45em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+#pphoto
+{
+    padding-top: 5%; 
+	padding-left: 35%;
+}
+
+#prole
+{
+    padding-top: 5%; 
+	padding-left: 45%;
+}
+
+#role_img
+{
+    margin-left: 35%;
+    border-radius: 7px;
+}
+
+#porsche911img
+{
+    margin-left: 10%;
+    margin-top: 1%;
+    width: 80%;
+    border-radius: 6px;
+}
+
+#about_movie
+{
+    height: 2100px;
+}
