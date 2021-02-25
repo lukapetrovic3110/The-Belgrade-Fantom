@@ -252,3 +252,37 @@ table#t01 tr:nth-child(odd)
    border-radius:10px;
    opacity:500;
 }
+
+#gallery img {
+    -webkit-transition: opacity 2s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	width: 100%;
+    max-width: 600px;
+	margin-left: 10%;
+	border-radius: 20px;
+}
+
+#gallery
+{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.indicator
+{
+    width: 35px;
+	height: 12px;
+	background-color: #dfbf9f;
+	float: left;
+	margin-right: 1.3em;
+	margin-top: 2%;
+}
+
+.indicator-holder 
+{
+	position: absolute;
+	left: 35%;
+}

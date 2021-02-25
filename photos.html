@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Beogradski fantom</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="images/icon.png"/>
+
+    <link rel="stylesheet" type = "text/css" href="style/style.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type = "text/javascript">
+        
+        var slideimage = new Array();
+
+        slideimage[0] = new Image();
+        slideimage[0].src = "images/img1.jpg";
+        slideimage[1] = new Image();
+        slideimage[1].src = "images/img2.jpg";
+        slideimage[2] = new Image();
+        slideimage[2].src = "images/img3.jpg";
+        slideimage[3] = new Image();
+        slideimage[3].src = "images/img4.jpg";
+        slideimage[4] = new Image();
+        slideimage[4].src = "images/img5.jpg";
+        slideimage[5] = new Image();
+        slideimage[5].src = "images/img6.jpg";
+        slideimage[6] = new Image();
+        slideimage[6].src = "images/img7.jpg";
+        slideimage[7] = new Image();
+        slideimage[7].src = "images/img8.jpg";
+        slideimage[8] = new Image();
+        slideimage[8].src = "images/img9.jpg";
+
+    </script>
+
+</head>
+
+<body>
+    <header class = "header">
+
+        <img id = "banner" alt = "banner_image" src = "images/banner.png">
+
+    </header>
+
+    <div class = "menu">
+        <div class = "navigation">
+            <ul>
+                <li><a href="index.html">POČETNA</a></li>
+                <li><a href="about_movie.html">O FILMU</a></li>
+                <li><a href="scenes.html">SCENE</a></li>
+                <li><a href="photos.html">FOTOGRAFIJE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "content">
+        <p id = "heading">Fotografije iz filma</p>
+
+        <hr width = "90%">
+        
+        </br></br></br></br>
+
+        <div id = "gallery">
+            
+            <img alt = "photo" src = "images/img1.jpg" id = "slide"/>
+            
+            <div class = "indicator-holder">
+
+                <div id = "ind1" class = "indicator"></div>
+                <div id = "ind2" class = "indicator"></div>
+                <div id = "ind3" class = "indicator"></div>
+                <div id = "ind4" class = "indicator"></div>
+                <div id = "ind5" class = "indicator"></div>
+                <div id = "ind6" class = "indicator"></div>
+                <div id = "ind7" class = "indicator"></div>
+                <div id = "ind8" class = "indicator"></div>
+                <div id = "ind9" class = "indicator"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var counter=0; // promenljiva koja se koristi kao broja; prilikom prolaska kroz niz slika
+        var br=0;
+        //**************** Funkcija koja omogućava transparentni efekat efekat prilikom tranzicije slika *********
+        function slideOpacity(){
+            document.getElementById('slide').style.opacity = "0";
+        }
+
+        function slideit(counter){
+
+        document.getElementById('slide').src = slideimage[counter].src; 
+        document.getElementById('slide').style.opacity = "100";
+        
+        switch(counter){
+                            case 0:
+                                document.getElementById('ind1').style.backgroundColor='red';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 1;
+                                break;
+                            
+                            case 1:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='red';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 2;
+                                break;
+                            
+                            case 2:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='red';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 3;
+                                break;
+                                
+                            case 3:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='red';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 4;
+                                break;
+                            case 4:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='red';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 5;
+                                break;
+                            case 5:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='red';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 6;
+                                break;
+                            case 6:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='red';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 7;
+                                break;
+                            case 7:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='red';
+                                document.getElementById('ind9').style.backgroundColor='gray';
+                                counter = 8;
+                                break;
+                            case 8:
+                                document.getElementById('ind1').style.backgroundColor='gray';
+                                document.getElementById('ind2').style.backgroundColor='gray';
+                                document.getElementById('ind3').style.backgroundColor='gray';
+                                document.getElementById('ind4').style.backgroundColor='gray';
+                                document.getElementById('ind5').style.backgroundColor='gray';
+                                document.getElementById('ind6').style.backgroundColor='gray';
+                                document.getElementById('ind7').style.backgroundColor='gray';
+                                document.getElementById('ind8').style.backgroundColor='gray';
+                                document.getElementById('ind9').style.backgroundColor='red';
+                                counter = 0;
+                                break;
+                            default:
+                        }
+                        
+                        br = counter;
+        if (counter<8)
+        counter++
+        else
+        counter=0
+            
+        setTimeout("slideit(br)",4000)
+        setTimeout("slideOpacity()",3800);
+        }
+
+        slideit(br);
+    </script>
+        
+    <footer class="footer">
+        </br>
+        <hr>
+        </br> 
+        <a href="index.html">POČETNA</a>|<a href="about_movie.html">O FILMU</a>|<a href="scenes.html">SCENE</a>|<a href="photos.html">FOTOGRAFIJE</a>
+        </br>
+        </br>
+        BEOGRADSKI FANTOM ©2016, Luka Petrovic
+        </br>
+        <hr>
+    </footer>
+    
+
+</body>
+
+</html>
